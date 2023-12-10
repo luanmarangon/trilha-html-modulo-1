@@ -1,62 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+    <title>Formação HTML Web Developer</title>
+
+    <style>
+        * {
+            text-align: justify;
+        }
+
+        a {
+            color: #fff !important;
+            text-decoration: none;
+        }
+
+        .main {
+            background-color: black;
+            display: flex;
+        }
+
+        .main_logo {
+            width: 25%;
+        }
+
+        .main_title {
+            width: 75%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main_title {
+            color: #fff;
+        }
+
+        .main_title h1:hover {
+            transform: scale(1.2);
+        }
+
+        .main_section {
+            display: flex;
+        }
+
+        .main_section_article {
+            width: 50%;
+        }
+
+        .main_section_author {
+            width: 30%;
+            display: flex;
+            align-items: center;
+            margin: 5%;
+
+        }
+
+        .main_section_author img {
+            border-radius: 50% !important;
+        }
+
+        .main_aside {
+            display: inline-grid;
+            width: 45%;
+        }
+
+        .main_footer_social {
+            width: 100%;
+            border: 3px solid #000;
+        }
+
+        .main_footer_social>h5 {
+            text-align: center;
+        }
+
+        .main_footer_social_img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main_footer_social_img img {
+            width: 100px;
+        }
+    </style>
+
+
 </head>
+
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
+    <main class="main">
+        <div class="main_logo">
+            <img src="https://hermes.digitalinnovation.one/assets/diome/logo-full.svg" alt="">
+        </div>
+        <div class="main_title">
+            <a href="https://web.dio.me/track/facf3f2a-4c2d-4250-be5b-93bb4d12995e" target="_blank">
+                <h1>Formação <i>HTML Web Developer</i></h1>
+            </a>
+        </div>
+    </main>
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
-    <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
-    </ul>
+    <section class="main_section">
+        <div class="main_section_article">
+            <h2><mark>HTML 5</mark> - Linguagem de Marcação HTML</h2>
+            <p>
+                O HTML5 é a quinta versão da linguagem de marcação HTML, fundamental para o desenvolvimento de páginas
+                web.
+                Introduzido para melhorar a estruturação e apresentação de conteúdo online, o HTML5 oferece recursos
+                avançados, incluindo semântica aprimorada para uma melhor compreensão do conteúdo pelos navegadores e
+                motores de busca.
+            </p>
+            <p>
+                Além disso, o HTML5 suporta nativamente elementos de multimídia, como áudio e vídeo, simplificando a
+                incorporação desses recursos nas páginas web. A nova versão também introduziu APIs que possibilitam o
+                desenvolvimento de aplicativos web mais poderosos e interativos. Sua natureza mais moderna e flexível
+                contribui para a criação de sites responsivos e adaptáveis a diferentes dispositivos.
+            </p>
+            <p>
+                Em resumo, o HTML5 representa uma evolução significativa na construção de páginas web, oferecendo maior
+                semântica, suporte nativo a multimídia e recursos avançados para o desenvolvimento de aplicações web
+                interativas.
+            </p>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+            <ol>
+                <li>
+                    <strong>HTML 5.0 (2008)</strong>: O processo de desenvolvimento do HTML5 começou em 2004, mas a
+                    primeira
+                    versão
+                    oficial foi lançada em 2008 pela Web Hypertext Application Technology Working Group (WHATWG). Nesta
+                    versão inicial, foram introduzidos elementos semânticos como "header", "footer", "nav", e "article",
+                    além de suporte nativo a áudio e vídeo com as tags "audio" e "video".
+                </li>
+                <li>
+                    <strong>HTML 5.1 (2016)</strong>: Uma atualização subsequente, o HTML 5.1, foi lançada em 2016 pelo
+                    World Wide Web Consortium (W3C). Esta versão trouxe melhorias na semântica, novas características e
+                    correções de erros. Elementos como "dialog" e "main" foram introduzidos, aprimorando a estruturação
+                    e
+                    acessibilidade.
+                </li>
+                <li>
+                    <strong>:HTML 5.2 (2017)</strong>: A versão 5.2 trouxe melhorias em áreas como formulários e APIs,
+                    introduzindo elementos como "details" e "summary". A API Payment Request também foi adicionada,
+                    facilitando pagamentos online seguros. Essa versão reforçou a estabilidade e usabilidade da
+                    linguagem.
+                </li>
+                <li>
+                    <strong>:HTML 5.3 (2020)</strong>: Continuando o aprimoramento, o HTML 5.3 foi lançado em 2020,
+                    trazendo
+                    melhorias em acessibilidade e a introdução de recursos como a API de Sensor de Movimento e a API do
+                    Wake
+                    Lock para fornecer maior controle sobre a atividade da tela.
+                </li>
+                <li>
+                    <strong>:HTML 6 (Perspectivas Futuras)</strong>: Embora não haja uma versão oficialmente denominada
+                    HTML6, os esforços contínuos de desenvolvimento e as discussões na comunidade sugerem a evolução
+                    constante da linguagem. A atenção se volta para melhorar a integração com tecnologias emergentes,
+                    como
+                    realidade virtual, Internet das Coisas (IoT) e uma web mais rápida e responsiva.
+                </li>
+                <li>
+                    <strong>:Conclusão</strong>:
+                    O HTML5 continua a desempenhar um papel central na evolução da web, proporcionando não apenas uma
+                    estrutura mais rica e semântica, mas também suporte para uma ampla variedade de recursos multimídia
+                    e
+                    interatividade. A colaboração entre a WHATWG e o W3C garante o desenvolvimento contínuo, mantendo o
+                    HTML
+                    na vanguarda da criação de conteúdo para a web.
+                </li>
+            </ol>
+        </div>
+        <div class="main_section_author">
+            <img src="https://avatars.githubusercontent.com/u/51962314?v=4" alt="">
+        </div>
+    </section>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <aside>
+        <hr>
+        <div class="main_aside">
+            <h3>Exemplos de textos com a tag "h1"</h3>
+            <ul>
+                <li>
+                    <h1>Titulo 1</h1>
+                </li>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+                <li>
+                    <h2>Titulo 2</h2>
+                </li>
+                <li>
+                    <h3>Titulo 3</h3>
+                </li>
+                <li>
+                    <h4>Titulo 4</h4>
+                </li>
+                <li>
+                    <h5>Titulo 5</h5>
+                </li>
+                <li>
+                    <h6>Titulo 6</h6>
+                </li>
+            </ul>
+        </div>
+        <div class="main_aside">
+            <p>Este é um exemplo de utilização da tag "sub" -> H<sub>2</sub>O</p>
+            <p>Este é um exemplo de utilização da tag "sup" -> 10<sup>2</sup> = 100</p>
+            <blockquote>
+                <p>Este é um bloco de citação com a TAG "bloquete".</p>
+            </blockquote>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+            <font size="4" color="red">Este é um texto estilizado com a tag font.</font>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+            <p>Esta é uma <del>frase antiga</del> atualizada.</p>
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
+            <p>Você pode usar a tag <abbr title="HyperText Markup Language">HTML</abbr> para criar páginas web.</p>
+
+        </div>
+    </aside>
+
+    <footer class="main_footer_social">
+        <h5>Entre em <u>contato</u> através das <small>Redes Sociais</small> abaixo:</h5>
+        <div class="main_footer_social_img">
+            <a href="https://github.com/luanmarangon"><img src="imgs/github.png" alt=""></a>
+            <a href="https://github.com/luanmarangon"><img src="imgs/linkedin.png" alt=""></a>
+        </div>
+    </footer>
+
+
+
 
 </body>
+
 </html>
